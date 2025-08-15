@@ -1,0 +1,116 @@
+/*.contain{
+  position: relative;
+  text-align: center;
+}
+.centered{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}*/
+body{
+  margin-top: 80px;
+  background-image: url(images/IMG-20250606-WA0036.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header{
+  position: fixed;
+  background-image: linear-gradient(to  left, blue, aqua);
+  box-shadow: 0 0 5px aqua;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  padding: 20px;
+}
+.logo{
+  width: 30%;
+}
+.logo p{
+  color: blue;
+  text-shadow: 0 0 7px black;
+  font-weight: bold;
+  font-size: large;
+}
+.menu{
+  width: 65%;
+  text-align: end;
+  display: none;
+}
+.menu a{
+color: aqua;
+text-shadow: 0 0 10px black;
+margin-left: 20px;
+font-weight: bold;
+font-size: medium;
+}
+
+.menu-button button{
+  text-decoration: none;
+  animation: button ease-in-out 2s;
+  top:300px;
+  right: 3%;
+  border-radius: 7px;
+  background-color: aqua;
+  width: 50px;
+  height: 55px;
+  position: fixed;
+  z-index: 100;
+  font-weight: bold;
+  box-shadow: 0 0 5px blue;
+  animation: button 1s ease-in-out;
+  font-size: 1rem;
+  vertical-align: middle;
+
+}
+@keyframes button{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.menu-button a{
+  color: black;
+}
+.menu-button img{
+  width: 30px;
+}
+.sub-menu button:nth-child(1){
+  position: fixed;
+  z-index: 100;
+  width: 50px;
+  right: 90px;
+}
+.sub-menu button:nth-child(2){
+position: fixed;
+z-index: 100;
+width: 50px;
+top:220px;
+}
+.sub-menu button:nth-child(3){
+  width: 50px;
+  top: 380px;
+}
+.foot img{
+  display: inline;
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: aqua;
+}
+.foot img:hover{
+  scale: 1.2;
+}
+@media screen and (min-width:768px) {
+  .menu-button{
+    display: none;
+  }
+  .menu{
+    display: inline;
+  }
+}
