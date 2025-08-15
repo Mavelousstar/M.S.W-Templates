@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="joel contact">
+    <title>Contact</title>
+    <link rel="stylesheet" href="joel.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    
+    <style>
+     h1{
+      color: black;
+      font-size: x-large;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .intro span{
+    margin-left: 10px;
+   }
+   .content{
+    margin-top: 20px;
+   }
+   .content img{
+    background-color: red;
+    border-radius: 40px;
+    width: 30px;
+    padding: 5px;
+   }
+  
+   .content span{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+   }
+   .content p{
+    color: black;
+    font-size: small;
+    margin-top: 10px;
+   }
+   .form span{
+    color: black;
+   }
+   .form input{
+    padding: 10px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    color: rgb(70, 70, 70);
+    width: 100%;
+   }
+   .form textarea{
+    padding: 10px;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    color: rgb(70, 70, 70);
+    width: 100%;
+   }
+   .form button{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    transition: 0.6s;
+   }
+   .form button:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    scale: 1.1;
+   }
+  </style>
+  </head>
+    <body>
+      <div class="menu-list">
+        <p class="p">JOEL</p> <button id="closer"> X</button>
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="about.html"><li>ABOUT</li></a>
+          <a href="service.html"><li>SERVICES</li></a>
+          <a href="contact.html"><li>CONTACT</li></a>
+          <a href="project.html"><li>PROJECT</li></a>
+        </ul>
+        <p>FIND ME</p>
+        <img src="svg/5279111_network_fb_social media_facebook_facebook logo_icon.svg"> <img src="svg/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"> <img src="svg/Circled_Twitter_svg-256.png"> <img src="svg/Rounded_Linkedin2_svg-256.png">
+      </div>
+      <header>
+        <div style="display: flex;flex-direction: row;">
+          <div class="logo">
+           <!-- <img src="images/Screenshot_20240327-062254_1.png">-->
+            <p>JOEL</p>
+          </div>
+          <div class="menu">
+            <img src="svg/menu-13-svgrepo-com.svg" id="button">
+          </div>
+          <div class="socialize">
+            <img src="svg/5279111_network_fb_social media_facebook_facebook logo_icon.svg"> <img src="svg/5282544_camera_instagram_social media_social network_instagram logo_icon.svg"> <img src="svg/Circled_Twitter_svg-256.png"> <img src="svg/Rounded_Linkedin2_svg-256.png">
+          </div>
+          <div class="resp">
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="about.html"><li>About</li></a>
+              <a href="service.html"><li>Services</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+              <a href="project.html"><li>Projects</li></a>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center intro">
+              <h1>Contact</h1>
+              <span><a style="color: rgb(28, 28, 28)" href="index.html">Home</a></span> <span style="color: black;">></span> <span><a style="color: red;" href="service.html">Contact</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+              <img src="svg/map-pin-128.png"><br>
+              <span>Address</span>
+              <p>
+                Nigeria, Lagos, ojo, Shubiri , Zone 4
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center ">
+              <img src="svg/phone-incoming-128.png"><br>
+              <span>Call Me</span>
+              <p>
+                +2349-0000-900
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="row form">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <span>GET IN TOUCH</span>
+              <p>Feeling inspired, let me bring your imaginations to reality, elevate your brand with me.</p>
+              <form>
+                <input type="text" placeholder="Your Name" required name="full name"><br>
+                <input type="tel" placeholder="Phone Number" required name="phone"><br>
+                <input type="email" placeholder="Your Email" required name="Email"><br>
+                <textarea placeholder="Your Message" required name="Message"></textarea><br>
+
+                <button class="btn" type="submit">Book Appointment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <span>Quick Link</span><br><br>
+                <span id="logo">JOEL</span>
+                <ul>
+                  <a href="index.html"><li>Home</li></a>
+                  <a href="about.html"><li>About Me</li></a>
+                  <a href="contact.html"><li>Contact</li></a>
+                  <a href="project.html"><li>projects</li></a>
+                </ul>
+                <p>
+                  <a href="mailto:mavelousstarworld@gmail.com">mavelousstarworld@gmail.com</a>
+                </p>
+                <p style="color: black;border-top: 1px solid red;" class="text-center">&copy 2025 M.S World</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="joel.js"></script>
+      </body>
+    </html>
