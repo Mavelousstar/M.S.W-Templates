@@ -1,0 +1,186 @@
+header{
+  width: 100%;
+  display: flex;
+  top: 0%;
+  flex-direction: row;
+  position: fixed;
+  z-index: 90;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+.menu2{
+  display: none;
+}
+header .logo{
+  margin-left: 2%;
+  width: 20%;
+}
+.logo span:nth-child(1){
+  font-size: large;
+  text-shadow: 0 0 3px white;
+}
+.logo span{
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .menu{
+  width: 80%;
+}
+.menu-list{
+  position: fixed;
+  top: 0;
+  width: 70%;
+  z-index: 95;
+  background-color: rgba(0, 0, 0,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  display: none;
+  transition: 0.5s;
+}
+.open-list{
+  display: inline-block;
+  top: 0;
+  right: 1%;
+}
+.menu-list span{
+  color: red;
+  background-color: white;
+  float: right;
+  padding: 10px;
+  margin-top: 1px;
+  margin-right: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.menu-list span:hover{
+  background-color: purple;
+  color: white;
+  scale: 0.9;
+}
+.menu-list ul{
+  margin-top: 5px;
+  list-style: none;
+  display: inline;
+}
+.menu-list li{
+  color: white;
+  margin-top: 15px;
+  margin-left: 10px;
+  display: inline-block;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.menu-list .active{
+  color: purple;
+  font-weight: bold;
+}
+.menu-list .active:hover{
+  color: white;
+}
+.menu-list a{
+  color: white;
+  transition: 0.5s;
+}
+.menu-list a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  padding: 5px;
+  border-radius: 10px;
+  scale: 1.1;
+}
+.menu img{
+  background-color: white;
+  border-radius: 30px;
+  width: 30px;
+  float: inline-end;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.menu img:hover{
+  scale: 1.1;
+}
+.menu button{
+  background-color: purple;
+  color: white;
+  border: 1px solid white;
+  margin-right: 20px;
+  float: inline-end;
+  transition: 0.6s;
+}
+.menu button:hover{
+  color: purple;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid purple;
+}
+body{
+  margin-top: 70px;
+background-image: url(images/aesthetic-background-with-gradient-sunset-projector-lamp_53876-103700.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+footer{
+  padding: 20px;
+  background-color: rgba(255, 255, 255,0.5);
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+footer img{
+  width: 30px;
+  margin-left: 10px;
+}
+footer p{
+  color: black;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+@media screen and (min-width:768px) {
+  .menu img{
+    display: none;
+  }
+  .menu2{
+    display: inline;
+  }
+  .menu2 ul{
+    display: inline;
+  }
+  .menu2 li{
+    display: inline-block;
+    color:white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .menu2 a{
+    color: white;
+    transition: 0.4s;
+  }
+  .menu2 .active{
+    color: purple;
+    font-weight: bold;
+  }
+  .menu2 a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 5px;
+    border-radius: 10px;
+    scale: 1.1;
+  }
+}

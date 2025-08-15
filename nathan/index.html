@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nathan">
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="nathan.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <style>
+      .social img{
+        width: 30px;
+        margin-right: 10px;
+        margin-top: 30px;
+        text-shadow: 0 0 6px black;
+        transition: 0.7s;
+      }
+      .social img:hover{
+        scale: 1.3;
+        
+      }
+      .con{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+      .con p{
+        color: white;
+        text-shadow: 0 0 5px black;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .con span{
+        color: white;
+        text-shadow: 0 0 8px black;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+  </head>
+  <div class="menu-list">
+    <span  id="close">X</span>
+    <ul>
+      <li><a href="index.html" class="active">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+      <li><a href="project.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOGS</a></li>
+    </ul>
+  </div>
+  <body>
+    <header>
+      <div class="logo">
+        <span style="color: purple;">N</span><span>athan</span>
+      </div>
+      <div class="menu">
+        <img src="svg/menu-svgrepo-com-3.svg" id="open"> <button class="btn" type="button">Hire Me</button>
+        <ul class="menu2">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="blog.html">BLOGS</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="con text-center">
+        <p>
+          Nathan G. Rodrigo
+        </p>
+        <span>I'm A <span style="color: purple; text-shadow:  2px 2px 3px white;">Designer</span></span>
+        <div class="social">
+          <img src="svg/gmail-icon-logo-svgrepo-com.svg"> <img src="svg/facebook-svgrepo-com.svg">
+          <img src="svg/5296765_camera_instagram_instagram logo_icon.svg"> <img src="svg/4102606_applications_media_social_whatsapp_icon.svg">
+        </div>
+      </div>
+    </main>
+
+    <script src="nathan.js"></script>
+  </body>
+</html>
