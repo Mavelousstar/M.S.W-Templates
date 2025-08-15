@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collins">
+    <title>Collins</title>
+    <link rel="stylesheet"href="bootstrap.css">
+    <link rel="stylesheet" href="collins.css">
+   
+    <style>
+     
+       .text-wrapper{
+         overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         }
+         .slide-in{
+          transform:translateX(-100%);
+          opacity: 0;
+          animation: slidein 0.7s ease-out forwards;
+         }
+         .slide-in:nth-child(1){
+          animation-delay: 1s;
+          transform: translateX(100%);
+         }
+         
+         .slide-in:nth-child(3){
+          animation-delay: 2s;
+          transform: translateX(-100%);
+         }
+         .slide-in:nth-child(4){
+          animation-delay: 2s;
+          transform: translateY(-100%);
+         }
+         .slide-in:nth-child(5){
+          animation-delay: 2s;
+          transform: translateY(100%);
+         }
+          @keyframes slidein {
+            to{
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          .slide-in img{
+            width: 80%;
+            border-radius: 10px;
+            animation: img 3s ease-in-out infinite;
+          }
+          @keyframes img {
+            0%{
+              box-shadow: 0 0 5px aqua;
+            }
+            50%{
+            box-shadow: 0 0 13px aqua;
+          }
+          100%{
+            box-shadow: 0 0 7px aqua;
+           }
+          }
+          .id{
+            position: relative !important;
+          }
+          .photo{
+            width: 100% !important;
+            height: 200px;
+          }
+          .social{
+            position: absolute;
+            top: 8px;
+            right: 3%;
+          }
+          .social img{
+            background-color: rgb(229, 54, 229);
+            width: 30px !important;
+            cursor: pointer;
+          }
+          .social img:hover{
+            background-color: aqua;
+            scale: 0.8;
+          }
+          .social img:active{
+            background-color: aqua;
+            scale: 0.8;
+          }
+          .jumbotron{
+            background-color: rgb(1, 1, 70,0.7);
+            border-radius: 10px;
+          }
+          .slide-in p{
+            margin-top: 20px;
+          }
+          .btn2:active{
+            background-color: aqua !important;
+            color: black !important;
+            border: none;
+            box-shadow: 0 0 7px aqua !important;
+          }
+          .btn2:hover{
+            background-color: aqua !important;
+            color: black !important;
+            border: none;
+            box-shadow: 0 0 7px aqua !important;
+          }
+          .slide-in img{
+            margin-top: 20px;
+          }
+          .slide-in .btn2{
+            margin-left: 10px;
+            background-color: blue;
+            color: white;
+            border: 1px solid aqua;
+            box-shadow: 0 0 5px aqua, 2px 2px 10px black;
+          }
+          button:active{
+            background-color: aqua !important;
+            color: black !important;
+            border: none;
+            box-shadow: 0 0 7px aqua !important;
+          }
+          button:hover{
+            background-color: aqua !important;
+            color: black !important;
+            border: none;
+            box-shadow: 0 0 7px aqua !important;
+          }
+          .jumbotron p{
+            font-weight: bold;
+            font-size: medium;
+            color: white;
+          }
+          .jumbotron{
+        color:white;
+        font-weight: 600;
+        margin-top: 50px;
+        background-color: rgba(4, 28, 123, 0.8);
+        border-radius: 50px;
+      }
+          .jumbotron2{
+            font-weight: bold;
+            font-size: small;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            background-color: lightblue;
+            border: 1px solid aqua;
+          }
+    
+      .service dl{
+        margin-top: 50px;
+      }
+      .service dt{
+        text-decoration: underline aqua;
+        margin-bottom: 10px;
+      }
+      .service dd{
+        margin-bottom: 20px;
+      }
+      .contact img{
+        background-color: aqua;
+        border-radius: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+      .contact img:hover{
+        background-color: rgb(129, 129, 238);
+        scale: 0.8;
+      }
+      .contact img:active{
+        background-color:darkorchid;
+        scale: 0.8;
+      }
+
+      @media screen and (min-width:992px) {
+        .photo{
+            width: 80% !important;
+            height: 300px;
+            margin-left: 10%;
+          }
+          .social{
+            position: absolute;
+            top: 60px !important;
+            right: 3%;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-button">
+        <button><a href="work.html"><img src="svg/layers-128.png"> work</a></button>
+     </div>
+    </div>
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="text-wrapper text-center">
+            <div class="contain">
+              <img src="images/IMG-20250606-WA0157.jpg" style="width: 100%; height: 250px;">
+              <div class="centered" style="background-color: rgba(0, 0, 0, 0.1);">
+                <div class="slide-in">
+                  <h1 style="color: aqua; font-weight: bold; text-shadow: 3px 2px 10px black;">Collins</h1><br>
+                   <span style="color:blue; text-shadow: 0 0 1px aqua;"><strong>Certified Building Engineer</strong></span>
+                   <p style="color: white; text-shadow: 0 0 5px black;"><strong>Designing safe and lasting structure - from foundation to finish</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="slide-in">
+              <a href="work.html"><button class="btn btn2" type="button">View Work</button></a>
+            </div>
+            
+            <div class="slide-in">
+              <p>I'm a professional building engineer with over 10 years of experience in planning, supervising and managing construction project.
+                 I've worked on residential homes, commercial buildings and renovations across various parts of Nigeria - always ensuring quality, safety and client satisfaction.</p>
+                 <p>
+                  Whether you're building from scratch or improving an existing structure, I'm here to help you build with confidence.
+                 </p>
+            </div>
+           
+            <div class="slide-in jumbotron text-left jumbotron2">
+              <ul>
+                <li>10 Years Experience</li>
+                <li>Based in Lagos, Nigeria</li>
+                <li>Available for Site Supervision, Building Design & Renovation</li>
+              </ul>
+            </div>
+
+          </div>
+         </div>
+        </div>
+      </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 style="color:white; border-left: 10px solid rgb(233, 16, 233); font-size:x-large;padding-left: 10px;text-decoration: underline aqua;">About</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center about">
+          <p style="font-size: medium;">
+            I'm <strong>Collins</strong>, a certified building engineer with over <strong>6 years of experience</strong> in structural design, project supervision and construction consultancy.
+          </p>
+          <p style="font-size: medium;">
+            I have worked on wide range of projects - from residential homes and office buildings to renovations and private developments. My goal is to help individuals and businesses bring their construction ideas to life - safely affordably and professionally. From initial planning of the final brick, i work with intrgrity and attention to detail.  
+          </p>
+        </div>
+      </div>
+      <div class="slide-in">
+        <div class="id"> 
+         <img src="images/smiling-businessman-signing-contract_23-2147626425.jpg" class="photo">
+         <div class="social">
+           <a target="_blank"><img src="svg/67-gmail-128.png"></a><br> <a><img src="svg/5279111_network_fb_social media_facebook_facebook logo_icon.svg"></a><br>
+           <a href="https://wa.me/2347052061257" target="_blank"><img src="svg/1964402_logo_media_social_whatsapp_icon.svg"></a><br> <a><img src="svg/Instagram_glyph_svg-128.png"></a>
+          </div>
+        </div>
+       
+       </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about2">
+          <h2 style="font-size: large; font-weight: bold; text-decoration: underline;">What Makes Me Different</h2>
+          <p style="font-size: medium;">
+            i offer more than just drawings or supervision - i offer <strong>peace of mind.</strong> With every client, I focus on:
+            <ul>
+              <li>Honest communication</li>
+              <li>Proper planning</li>
+              <li>Safe construction</li>
+              <li>On time delivery</li>
+            </ul>
+          </p>
+          <p style="font-size: medium;">
+            <strong>Location: Lagos, Nigeria</strong><br>
+            Available for work in lagos and nearby regions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3 style="color:white; border-left: 10px solid rgb(233, 16, 233); font-size: x-large;padding-left: 10px;text-decoration: underline aqua;">Services</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 service">
+          <p style="font-size: medium;">
+            I provide a range of professional engineering services to individuals, families, property developers and organizations: 
+          </p>
+            <dl>
+              <dt>Building Design</dt>
+              <dd>
+                I create structural designs and plans that are strong, efficient and ready for approval by authorities. Whether you're building a home, a school or an office - I can design it to standard.
+              </dd>
+              <dt>Site Supervision</dt>
+              <dd>
+                Let me manage your construction site to ensure the job is done right. I oversee workers, monitor progress, and help prevent mistakes or waste.
+              </dd>
+              <dt>Project Planning & advice</dt>
+              <dd>
+                Starting a building project can be stressful. I help clients plan from start to finish - budgeting, materials, timeline and technical advice.
+              </dd>
+              <dt>Building Renovation</dt>
+              <dd>
+                Old buildings can be brought back to life. I provide renovation solutions for homes, shops and offices - improving both structure and appearance.
+              </dd>
+            </dl>
+            <h4>Additional Services</h4>
+            <ul>
+              <li>Structural reports</li>
+              <li>Site visits & consultations</li>
+              <li>Advice on approvals & materials</li>
+            </ul>
+           
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact">
+          <a target="_blank" style="text-decoration: none;"><img src="svg/67-gmail-128.png" style="width: 30px;"></a> <a><img src="svg/5279111_network_fb_social media_facebook_facebook logo_icon.svg" style="width: 30px;"></a>
+          <a href="https://wa.me/2347052061257" target="_blank" style="text-decoration: none;"><img src="svg/1964402_logo_media_social_whatsapp_icon.svg" style="width: 30px;"></a> <a><img src="svg/Instagram_glyph_svg-128.png" style="width: 30px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           
+            <p style="color: white; margin-top: 20px; background-color: black;">All right reserved &copy 2025 <strong>M.S World</strong></p>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
